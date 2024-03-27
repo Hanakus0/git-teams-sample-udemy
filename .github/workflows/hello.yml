@@ -1,0 +1,16 @@
+#ワークフロー名
+name: Hello,World
+# イベント名
+on: push
+
+# ジョブ
+jobs: 
+  # ジョブのID
+  my_first_job:
+    # ジョブ名
+    name: Greeting
+    # 実行される仮想環境
+    runs-on: ubuntu-latest
+    # ジョブ内で実行される処理
+    steps:
+      - run: echo "hello,world"
